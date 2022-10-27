@@ -3,7 +3,7 @@ const routes = require('express').Router();
 
 //Send Grid Setup
 const sendGridMail = require('@sendgrid/mail');
-sendGridMail.setApiKey('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');
+sendGridMail.setApiKey('API-KEY-HERE');
 
 
 /***********************************************************/

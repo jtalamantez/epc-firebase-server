@@ -33,19 +33,6 @@ const csv = require('fast-csv');
 //Include the homemade helpers library
 const helpers = require('./helpers')
 
-
-//Mailgun Setup
-const api_key = 'key-2844480bd655baa81f254c9e7ba44f2b'
-const domain = 'mg.hogsalt.com'
-const mailgun = require('mailgun-js')({apiKey: api_key, domain: domain})
-
-
-//Stripe Libraries
-/*
-const stripeSAND = require('stripe')('sk_test_51IJ2w6ATfAVZI5c3jgP5x6DtYz3JQA62tVPdUBu2yFMj7t3jWm10teOIXmmSqsSl42dMhNDUqjRxAzjQbQShPMOv00zJe2dMdI')
-const stripe = require('stripe')('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')
-*/
-
 /**********************************************************************************/
 //EXPREESS SETUP
 /**********************************************************************************/
@@ -444,14 +431,7 @@ app.post('/certification', async (req, res) => {
             text: 'A new certification has been uploaded for your review: '+title+'\n\n'+file+'\n\n Approve this here: '+approvalURL
         }
         
-        try {
-            mailgun.messages().send(data, function (error, body) {
-                res.status(200).send("All Set");
-            });
-        } catch (error) {
-            return res.status(400).send({error:error});
-        }
-
+      
 
         res.status(200).send("All Set");
     }
