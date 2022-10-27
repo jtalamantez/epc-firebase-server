@@ -5,8 +5,7 @@ const helpers = require('../../helpers')
 const routes = require('express').Router()
 
 //Stripe Libraries
-const stripe = require('stripe')('sk_test_51IJ2w6ATfAVZI5c3jgP5x6DtYz3JQA62tVPdUBu2yFMj7t3jWm10teOIXmmSqsSl42dMhNDUqjRxAzjQbQShPMOv00zJe2dMdI');
-const stripeLive = require('stripe')('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')
+const stripe = require('stripe')('SANDBOX-API-KEY');
 
 /****************************************************/
 //FIREBASE SETUP
