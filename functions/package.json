@@ -1,0 +1,43 @@
+{
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "10"
+  },
+  "dependencies": {
+    "@aws-sdk/client-ses": "^3.11.0",
+    "@google-cloud/error-reporting": "^2.0.1",
+    "@sendgrid/mail": "^7.7.0",
+    "base-64": "^1.0.0",
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "fast-csv": "^4.3.6",
+    "firebase-admin": "^8.10.0",
+    "firebase-functions": "^3.6.1",
+    "fs": "0.0.1-security",
+    "js-crypto-key-utils": "^1.0.0",
+    "js-crypto-rsa": "^1.0.0",
+    "mailgun-js": "^0.22.0",
+    "moment": "^2.29.1",
+    "node-fetch": "^2.6.1",
+    "nodemailer": "^6.5.0",
+    "path": "^0.12.7",
+    "request": "^2.88.2",
+    "simple-encryptor": "^4.0.0",
+    "stripe": "^8.135.0",
+    "underscore": "^1.12.0",
+    "uuid": "^8.3.2"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
