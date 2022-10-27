@@ -65,9 +65,6 @@ main.use(function (err, req, res, next) {
     res.status(500).send('Something broke!')
 })
 
-//SENDGRID
-const sendGrid = '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'
-
 
 /**********************************************************************************/
 //API STARTER ENDPOINTS AND EXAMPLES
